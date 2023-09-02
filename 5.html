@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pseudo-class Selector Practice</title>
+<style>
+    /* 1 */
+nav a:hover {
+  color: red;
+}
+
+/* 2 */
+nav a:active {
+  background-color: yellow;
+}
+
+/* 3 */
+nav a:link {
+  color: blue;
+}
+
+/* 4 */
+.links a:visited {
+  font-style: italic;
+}
+
+/*5 */
+h2:hover {
+  background-color: lightgray;
+}
+
+/*6 */
+h2:active {
+  text-decoration: underline;
+}
+
+/*7*/
+.links a:last-child {
+  color: green;
+}/* 8 */
+nav ul li:nth-child(odd) {
+  background-color: grey;
+}
+
+/* 9 */
+.paragraphs p:nth-child(3) {
+  color: orange;
+}
+
+/*10 */
+input:focus {
+  border: 2px solid palevioletred;
+}
+/* 1 */
+p.para::first-letter {
+  color: fuchsia;
+  font-size:larger;
+}
+/* 2 */
+header h1::first-line{
+  font-style: italic;
+}
+/* 3 */
+header,nav::before{
+  text-decoration:line-through; 
+}
+/* 4 */
+nav ul li::after{
+  content: "*";
+}
+/* 5 */
+p mark {
+  background-color:red;
+}
+/* 6 */
+.paragraphs p::first-line{
+  color: red;
+}
+/* 7 */
+nav a::before{
+  content: url();
+}
+/* 8 */
+nav ul li:last-child::after{
+  content:"*";
+}
+
+
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to the Pseudo-class Selector Practice</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<main>
+<section>
+<h2>About Us</h2>
+<p class="para">We are a web development company...</p>
+</section>
+<section>
+<h2>Our Services</h2>
+<ul>
+<li>Web Design</li>
+<li>Front-end Development</li>
+<li>Back-end Development</li>
+</ul>
+</section>
+</main>
+<div id="additional-info">
+<div class="paragraphs">
+  <p><mark>Paragraph 1</mark></p>
+<p>Paragraph 2</p>
+<p>Paragraph 3</p>
+
+</div>
+<div class="links">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+</div>
+</div>
+<footer>
+<p>&copy; 2023 Pseudo-class Selector Practice</p>
+</footer></body></html>

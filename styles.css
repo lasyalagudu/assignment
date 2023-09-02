@@ -1,0 +1,42 @@
+/* 1 */
+nav ul { 
+    background-color: red;
+}
+/* 2*/
+section > p{
+    color: brown;
+}
+/* 3*/
+div  p {
+    border:5px solid red;
+}
+/* 4*/
+div > a {
+    font-weight:bolder;
+}
+/* 5 */
+.paragraphs p:nth-child(3) {
+   
+    font-size:50px;
+}
+/* 6 */
+nav  ul li{
+    margin-bottom:1px;
+}
+/* 7*/
+.links a:first-child {
+    color: red;
+    text-decoration-line: underline;
+}
+/* 8*/
+.links a:nth-child(2){
+    text-decoration: underline;
+}
+/* 9 */
+main section{
+    padding:2px;
+}
+
+footer  p {
+    border:5px solid blue;
+}
